@@ -298,9 +298,6 @@ nav {
 
 @media screen and (min-width: 824px) and (max-width: 1023px) {
 
-body {
-    background-color: blueviolet;
-}
 
 nav {
     width: 1%;
