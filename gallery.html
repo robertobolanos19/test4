@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <title>My Sweet Gluttony</title>
+         <link rel="stylesheet" href="gallery.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <div class="loader_bg">
+            <div class="loader"></div>
+        </div>
+
+        <a href="MainPage.html"><div class="topNavLogo"></div></a>
+        <nav>
+              <div class="openMenu"><i class="fa fa-bars"></i></div>
+                  <ul class="mainMenu">
+                      <li><a href="MainPage.html" id="closeHomeMenu">Home</a></li>
+                      <li><a href="#" id="closeGalleryMenu">Gallery</a></li>
+
+                      <div class="closeMenu"><i class="fa fa-times"></i></div>
+                      <span class="mobile-icons">
+                          <i class="fab fa-instagram"></i>
+                      </span>
+                  </ul>
+        </nav>
+
+        <div class="title"><h1>Gallery</h1></div>
+
+        <div class="gallery_container_row">
+        <div class="gallery_container_column">
+            <div class="block" class="firstImage"><a href="MSG.html"><img src="imgs/dayPrison.png" alt=""><h1>My Sweet Gluttony</h1></a></div>
+            <div class="block" class="SecImage"><a href="Gundam.html"><img src="imgs/gundams.png" alt=""><h1>Gundams</h1></a></div>
+            <div class="block" class="thirdImage"><a href="MrFearPrison.html"><img src="imgs/MSG2.png" alt=""><h1>Mr.Fear Prison</h1></a></div>
+            <div class="block" class="fourthImage"><a href="Illusion.html"><img src="imgs/MSGaxe.png" alt=""><h1>Illusions</h1></a></div>
+        </div>  
+        <div class="gallery_container_column">   
+            <div class="block" class="fifthImage"><a href="BaneMask.html"><img src="imgs/MSGtop.png" alt=""><h1>BaneMask</h1></a></div>
+            <div class="block" class="sixthImage"><a href="Centuar.html"><img src="imgs/nightFrontPrison.png" alt=""><h1>Centaur</h1></a></div>
+            <div class="block" class="seventhImage"><a href="MarioPlant.html"><img src="imgs/Redprison.png" alt=""><h1>Mario Plant</h1></a></div>
+            <div class="block" class="eightImage"><a href="DivingDeep.html"><img src="imgs/statue.png" alt=""><h1>Diving Deep</h1></a></div>
+        </div>   
+        <div class="gallery_container_column"> 
+            <div class="block" class="ninthImage"><a href="KingMat.html"><img src="imgs/tavern.png" alt=""><h1>King Mat</h1></a></div>
+            <div class="block" class="tenthImage"><a href="Dentist.html"><img src="imgs/tempLogo.jpeg" alt=""><h1>Dentist</h1></a></div>
+            <div class="block" class="eleventhImage"><a href="Illusion.html"><img src="imgs/tvs.png" alt=""><h1>Brooklyn</h1></a></div>
+            <div class="block" class="twelvthImage"><a href="Atat.html"><img src="imgs/dayPrison.png" alt=""><h1>The ATAT's</h1></a></div>
+        </div>
+        <div class="gallery_container_column">     
+            <div class="block" class="thirteenthImage"><a href="Tripod.html"><img src="imgs/gundams.png" alt=""><h1>Tripod</h1></a></div>
+            <div class="block" class="fourteenthImage"><a href="BarberShop.html"><img src="imgs/MSG2.png" alt=""><h1>Barber Site</h1></a></div>
+            <div class="block" class="fifthteenthImage"><a href="ChairManBao.html"><img src="imgs/MSGaxe.png" alt=""><h1>FoodTruck Site</h1></a></div>
+        </div>
+        </div>
+        
+
+        <div class="backToTop"><a href="gallery.html"><p>Back to the top ⤉</p></a></div>
+
+        <script src="./MainPage.js"></script>
+        
+        <script src="baffle.min.js"></script>
+    <script>
+        const text = baffle('.title');
+        text.set({
+            characters : '/▓░ /▓▓<█ ▒▓▓>/ ▓▒▒ ▓<██░ ▓▓▓░ ░<< ░██▒ <░▒▓',
+            speed: 358
+        });
+        text.start();
+        text.reveal(6000)
+    </script>
+        
+    
+    </body>
+
+    
+
+
+</html>

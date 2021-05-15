@@ -1,0 +1,646 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    margin-top: 4%;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+nav .mainMenu li a:hover {
+    font-size: 1.2rem;
+    margin-top: 2%;
+    
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin-top: 2%;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu , .mobile-icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+    .topNavLogo {
+        width: 150px;
+        height: 140px;
+        background: url(imgs/tempLogo.jpeg) no-repeat 50% 50%;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        z-index: 110;
+    }
+
+    .firstSection {
+        width: 100%;
+        position: relative;
+        margin-top: 10%;
+        padding-bottom: 5%;
+        display: grid;
+        grid-template-rows: 10% 1fr;
+    }
+
+    .firstSection .leftSideText {
+        display: grid;
+    }
+
+    .leftSideText .upperText {
+        width: 50%;
+        padding-top: 14%;
+        padding-left: 5%;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .leftSideText .lowerText {
+        width: 100%;
+        padding-top: 4%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 18px;
+        line-height: 21px;
+        font-weight: 400;
+        text-indent: 50px;
+    }
+
+    .secondSection {
+        width: 100%;
+        height: 56vh;
+    }
+
+    .secondSection .firstImage {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        background: blue;
+        background-size: cover;
+    }
+
+    .thirdSection {
+        padding-top: 5%;
+        padding-left: 6%;
+        font-size: 13px;
+    }
+
+    .fourthSection {
+        padding-top: 5%;
+
+    }
+
+    .fourthSection h3 {
+        padding-left: 6%;
+        padding-bottom: 5%;
+        font-size: 14px;
+    }
+
+    .TechAndTags {
+        width: 85%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        padding-bottom: 4%;
+        border-bottom: 2px solid white;
+    }
+
+    .YearAndClient {
+        padding-top: 4%;
+        width: 92%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+    }
+
+    .YearAndClient h5 {
+        padding-left: 5%;
+        padding-bottom: 10%;
+    }
+    
+    .webLink {
+        padding-bottom: 5%;
+    }
+
+    .Link h3{
+        font-size: 14px;
+    }
+
+    .Link h4 {
+        padding-left: 6%;
+    }
+
+    .fifthSection {
+        width: 100%;
+        height: 56vh;
+        margin-bottom: 8%;
+    }
+    
+    .fifthSection .secondImage {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        background: blue;
+        background-size: cover;
+    }
+
+    .thirdImage {
+        width: 55%;
+        height: 25vh;
+        margin-left: 25%;
+        margin-bottom: 5%;
+        background: blue;
+        background-size: cover;
+    }
+
+    .ThirdImageText {
+        padding-top: 28%;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+    .fourthAndFifthImage {
+        width: 65%;
+        height: 28vh;
+        margin-left: 16%;
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fourthAndFifthImage .fourthImage {
+        width: 80%;
+        height: 90%;
+        margin-top: 4%;
+        margin-left: 14%;
+        background: blue;
+        background-size: cover;
+    }
+
+    .fourthAndFifthImage .fifthImage {
+        width: 90%;
+        height: 100%;
+        margin-left: 6%;
+        background: blue;
+        background-size: cover;
+    }
+
+    .sixthImage { 
+        width: 90%;
+        height: 55vh;
+        margin-left: 5%;
+        margin-top: 8%;
+        background: blue;
+        background-size: cover;
+    }
+
+    .lastBorder {
+        padding-top: 5%;
+        width: 90%;
+        height: 1px;
+        margin: auto;
+        border-bottom: 3px solid white;
+    }
+
+    .NextProjectText {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding-top: 10%;
+        padding-bottom: 12%;
+        text-align: center;
+    }
+
+    a:hover, .NextProjectText a:hover, .backToTop:hover {
+        padding-bottom: 5%;
+        animation: 0.6s shake infinite;
+    }
+
+    @keyframes shake {
+        0% {
+            transform: translate(0px,0px) rotate(0deg);
+        }
+        25% {
+            transform: translate(1px,1px) rotate(1deg);
+        }
+        50% {
+            transform: translate(-1px,-1px) rotate(-1deg);
+        }
+        75% {
+            transform: translate(2px,-1) rotate(2deg);
+        }
+        100% {
+            transform: translate(-1px,1px) rotate(-1deg);
+        }
+    }
+
+    .NextProjectText h1:hover {
+        width: 18%;
+        text-align: center;
+        margin-left: 41%;
+        animation: 0.6s shake infinite;
+    }
+
+    .NextProjectText h3 {
+        margin-top: 2%;
+        font-size: 14px;
+    }
+
+    .backToTop {
+        display: none;
+    }
+
+
+
+@media screen and (min-width: 320px) and (max-width: 600px){
+    /* styles */
+    .loader {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        position: absolute;
+        left: 46%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .topNavLogo {
+        width: 150px;
+        height: 140px;
+        position: absolute;
+        top: 0;
+    }
+  
+    nav {
+        width: 1%;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+    }
+
+    nav .mainMenu {
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: top 30s ease;
+        display: none;
+        background-color: black;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 4%;
+        right: 15px;
+    }
+
+    nav .openMenu {
+        display: block;
+        margin-left: 335px;
+        margin-top: 46px;
+       
+    }
+
+    .mobile-icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    .firstSection {
+        width: 100%;
+        position: relative;
+        margin-top: 26%;
+        padding-bottom: 8%;
+        display: grid;
+        grid-template-rows: 10% 1fr;
+    }
+
+    .firstSection .leftSideText {
+        display: grid;
+    }
+
+    .leftSideText .upperText {
+        width: 50%;
+        padding-top: 14%;
+        padding-left: 5%;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .leftSideText .lowerText {
+        padding-top: 6%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+    }
+
+    .secondSection {
+        width: 100%;
+        height: 56vh;
+    }
+
+    .secondSection .firstImage {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .thirdSection {
+        padding-top: 24%;
+        padding-left: 6%;
+        font-size: 13px;
+    }
+
+    .fourthSection {
+        padding-top: 5%;
+
+    }
+
+    .fourthSection h3 {
+        padding-left: 6%;
+        padding-bottom: 5%;
+        font-size: 14px;
+    }
+
+    .TechAndTags {
+        width: 85%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        padding-bottom: 4%;
+        border-bottom: 2px solid white;
+    }
+
+    .YearAndClient {
+        padding-top: 4%;
+        width: 92%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+    }
+
+    .YearAndClient h5 {
+        padding-left: 5%;
+        padding-bottom: 10%;
+    }
+    
+    .webLink {
+        padding-top: 5%;
+        line-height: 1px;
+        padding-bottom: 25%;
+    }
+
+    .Link h3{
+        font-size: 14px;
+    }
+
+    .Link h4 {
+        padding-top: 5%;
+        padding-left: 6%;
+    }
+
+    .fifthSection {
+        width: 100%;
+        height: 56vh;
+        margin-bottom: 25%;
+    }
+    
+    .fifthSection .secondImage {
+        width: 90%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .thirdImage {
+        width: 65%;
+        height: 12vh;
+        margin-left: 24%;
+        margin-bottom: 5%;
+    }
+
+    .ThirdImageText {
+        padding-top: 41%;
+        padding-right: 0%;
+        font-size: 18px;
+        z-index: 100;
+        text-transform: uppercase;
+    }
+
+    .fourthAndFifthImage {
+        width: 85%;
+        height: 18vh;
+        margin-left: 5%;
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10%;
+        z-index: -10;
+    }
+
+    .fourthAndFifthImage .fourthImage {
+        width: 100%;
+        height: 70%;
+        margin-top: 14%;
+    }
+
+    .fourthAndFifthImage .fifthImage {
+        width: 90%;
+        height: 100%;
+        z-index: -10;
+    }
+
+    .sixthImage { 
+        width: 90%;
+        height: 55vh;
+        margin-left: 5%;
+        margin-top: 24%;
+    }
+
+    .lastBorder {
+        padding-top: 5%;
+        width: 90%;
+        height: 1px;
+        margin: auto;
+        border-bottom: 3px solid white;
+    }
+
+    .NextProjectText {
+        width: 90%;
+        height: auto;
+        margin: auto;
+        padding-top: 20%;
+        padding-bottom: 25%;
+        text-align: center;
+    }
+
+    .NextProjectText h1 {
+        padding-bottom: 5%;
+    }
+
+    .NextProjectText h3 {
+        font-size: 14px;
+    }
+
+    .backToTop {
+        font-size: 14px;
+        position: absolute;
+        top: 350%;
+        right: 5%;
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 823px) {
+
+    .topNavLogo {
+        width: 150px;
+        height: 140px;
+        position: absolute;
+        top: 0;
+    }
+  
+    nav {
+        width: 1%;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        margin-left: 60%;
+        margin-top: 5%;
+    }
+
+    .ThirdImageText {
+        top: 260%;
+    }
+
+}
+
+@media screen and (min-width: 824px) and (max-width: 1023px) {
+
+    nav {
+        width: 1%;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        margin-left: 60%;
+        margin-top: 5%;
+    }
+
+    .thirdImage {
+        width: 55%;
+        height: 25vh;
+        margin-left: 23%;
+        margin-bottom: 2%;
+    }
+
+   
+    .fourthAndFifthImage {
+        width: 65%;
+        height: 28vh;
+        margin-left: 16%;
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fourthAndFifthImage .fourthImage {
+        width: 80%;
+        height: 90%;
+        margin-top: 10%;
+    }
+
+    .fourthAndFifthImage .fifthImage {
+        width: 90%;
+        height: 100%;
+        margin-left: 2%;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    nav {
+        width: 1%;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        margin-left: 80%;
+        margin-top: 5%;
+    }
+
+    .thirdImage {
+        width: 55%;
+        height: 25vh;
+        margin-left: 23%;
+        margin-bottom: 2%;
+    }
+
+    .fourthAndFifthImage {
+        width: 65%;
+        height: 28vh;
+        margin-left: 16%;
+        margin-bottom: 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fourthAndFifthImage .fourthImage {
+        width: 80%;
+        height: 90%;
+        margin-top: 10%;
+    }
+
+    .fourthAndFifthImage .fifthImage {
+        width: 90%;
+        height: 100%;
+        margin-left: 2%;
+    }
+}

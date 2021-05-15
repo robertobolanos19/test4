@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <title>King Mat</title>
+         <link rel="stylesheet" href="Atat.css">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <div class="loader_bg">
+            <div class="loader"></div>
+        </div>
+
+        <a href="MainPage.html"><div class="topNavLogo"></div></a>
+        <nav>
+              <div class="openMenu"><i class="fa fa-bars"></i></div>
+                  <ul class="mainMenu">
+                      <li><a href="MainPage.html" id="closeHomeMenu">Home</a></li>
+                      <li><a href="gallery.html" id="closeGalleryMenu">Gallery</a></li>
+      
+                      <div class="closeMenu"><i class="fa fa-times"></i></div>
+                      <span class="mobile-icons">
+                          <i class="fab fa-instagram"></i>
+                      </span>
+                  </ul>
+        </nav>
+
+        <section class="firstSection">
+            <div class="leftSideText">
+                <div class="upperText"><h1>King Mat</h1></div>
+                <div class="lowerText"><p></p></div>
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <div class="firstImage"></div>
+        </section>
+
+        <section class="thirdSection">
+            <h3>Visual Assests</h3>
+        </section>
+        
+        <section class="fourthSection">
+            <h3>Technologies & Tags</h3>
+            <div class="TechAndTags">
+                <div class="leftTech">
+                    <li>Maya</li>
+                </div>
+                <div class="rightTags"><li>Arnoal Renderer</li></div>
+            </div>
+            <div class="YearAndClient">
+                <div class="Year">
+                <h3>Year</h3>
+                <h5>2020</h5>
+                </div>
+                <div class="Client">
+                    <h3>Client</h3>
+                    <h5>Own Portfolio</h5>
+                </div>
+            </div>
+            <div class="webLink">
+                <div class="Link">
+                    <h3>Web Site</h3>
+                    <h4><a href="#">-</a></h4>
+                </div>
+            </div>
+        </section>
+
+        <section class="fifthSection">
+            <div class="secondImage"></div>
+        </section>
+
+        <div class="thirdImage">
+            <div class="ThirdImageText"><h2>Clean!</h2></div>
+        </div>
+
+        <div class="fourthAndFifthImage">
+            <div class="fourthImage"></div>
+            <div class="fifthImage"></div>
+        </div>
+
+        <div class="sixthImage"></div>
+
+        <div class="lastBorder"></div>
+
+        <div class="NextProjectText">
+            <h1><a href="Dentist.html">Next Project</a></h1>
+            <h3>Dentist 2021</h3>
+        </div>
+
+        <div class="backToTop"><a href="KingMat.html"><p>Back to the top ⤉</p></a></div>
+
+        <script src="./MainPage.js"></script>
+        <script src="baffle.min.js"></script>
+    <script>
+        const text = baffle('.upperText');
+        text.set({
+            characters : '/▓░ /▓▓<█ ▒▓▓>/ ▓▒▒ ▓<██░ ▓▓▓░ ░<< ░██▒ <░▒▓',
+            speed: 398
+        });
+        text.start();
+        text.reveal(16000)
+    </script>
+        
+    </body>
+
+    
+
+
+</html>
